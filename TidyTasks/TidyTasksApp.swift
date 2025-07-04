@@ -80,7 +80,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
 }
 
 @main
-struct ModernToDoAppApp: App {
+struct TidyTasksApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     let persistenceController = CoreDataStack.shared

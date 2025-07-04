@@ -1,6 +1,6 @@
 import XCTest
 import Combine
-@testable import ModernToDoApp
+@testable import TidyTasks
 
 @MainActor
 final class ViewModelTests: XCTestCase {

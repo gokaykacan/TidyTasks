@@ -135,12 +135,12 @@ class ShareViewController: UIViewController {
     
     private func saveTaskToCoreData(title: String, notes: String?, completion: @escaping (Bool) -> Void) {
         // Get the shared Core Data stack
-        guard let appGroupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.moderntodoapp.shared") else {
+        guard let appGroupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.tidytasks.shared") else {
             completion(false)
             return
         }
         
-        let storeURL = appGroupURL.appendingPathComponent("ModernToDoApp.sqlite")
+        let storeURL = appGroupURL.appendingPathComponent("TidyTasks.sqlite")
         
         // Create a separate Core Data stack for the extension
         let container = NSPersistentContainer(name: "TaskModel")

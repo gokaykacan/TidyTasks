@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A0001010000000000000001 /* ModernToDoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001000000000000000001 /* ModernToDoAppApp.swift */; };
+		1A0001010000000000000001 /* TidyTasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001000000000000000001 /* TidyTasksApp.swift */; };
 		1A0001030000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001020000000000000001 /* ContentView.swift */; };
 		1A0001050000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0001040000000000000001 /* Assets.xcassets */; };
 		1A0001080000000000000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0001070000000000000001 /* Preview Assets.xcassets */; };
@@ -36,8 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A0000FD0000000000000001 /* ModernToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A0001000000000000000001 /* ModernToDoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernToDoAppApp.swift; sourceTree = "<group>"; };
+		1A0000FD0000000000000001 /* TidyTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TidyTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0001000000000000000001 /* TidyTasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidyTasksApp.swift; sourceTree = "<group>"; };
 		1A0001020000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A0001040000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A0001070000000000000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		1A0000F40000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				1A0000FF0000000000000001 /* ModernToDoApp */,
+				1A0000FF0000000000000001 /* TidyTasks */,
 				1A0000FE0000000000000001 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,17 +87,17 @@
 		1A0000FE0000000000000001 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A0000FD0000000000000001 /* ModernToDoApp.app */,
+				1A0000FD0000000000000001 /* TidyTasks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A0000FF0000000000000001 /* ModernToDoApp */ = {
+		1A0000FF0000000000000001 /* TidyTasks */ = {
 			isa = PBXGroup;
 			children = (
 				6E6E0E802E131C0700C459DD /* en.lproj */,
 				6E6E0E7C2E131BE700C459DD /* tr.lproj */,
-				1A0001000000000000000001 /* ModernToDoAppApp.swift */,
+				1A0001000000000000000001 /* TidyTasksApp.swift */,
 				1A000114000000000000001 /* Core */,
 				1A000115000000000000001 /* Features */,
 				1A000124000000000000001 /* Views */,
@@ -107,7 +107,7 @@
 				1A0001040000000000000001 /* Assets.xcassets */,
 				1A0001060000000000000001 /* Preview Content */,
 			);
-			path = ModernToDoApp;
+			path = TidyTasks;
 			sourceTree = "<group>";
 		};
 		1A0001060000000000000001 /* Preview Content */ = {
@@ -216,9 +216,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A0000FC0000000000000001 /* ModernToDoApp */ = {
+		1A0000FC0000000000000001 /* TidyTasks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A00010B0000000000000001 /* Build configuration list for PBXNativeTarget "ModernToDoApp" */;
+			buildConfigurationList = 1A00010B0000000000000001 /* Build configuration list for PBXNativeTarget "TidyTasks" */;
 			buildPhases = (
 				1A0000F90000000000000001 /* Sources */,
 				1A0000FA0000000000000001 /* Frameworks */,
@@ -228,9 +228,9 @@
 			);
 			dependencies = (
 			);
-			name = ModernToDoApp;
-			productName = ModernToDoApp;
-			productReference = 1A0000FD0000000000000001 /* ModernToDoApp.app */;
+			name = TidyTasks;
+			productName = TidyTasks;
+			productReference = 1A0000FD0000000000000001 /* TidyTasks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A0000F80000000000000001 /* Build configuration list for PBXProject "ModernToDoApp" */;
+			buildConfigurationList = 1A0000F80000000000000001 /* Build configuration list for PBXProject "TidyTasks" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,7 +262,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A0000FC0000000000000001 /* ModernToDoApp */,
+				1A0000FC0000000000000001 /* TidyTasks */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +288,7 @@
 			files = (
 				1A000113000000000000001 /* TaskModel.xcdatamodeld in Sources */,
 				1A0001030000000000000001 /* ContentView.swift in Sources */,
-				1A0001010000000000000001 /* ModernToDoAppApp.swift in Sources */,
+				1A0001010000000000000001 /* TidyTasksApp.swift in Sources */,
 				6E6E0E8B2E14518600C459DD /* PaginatedTaskRepository.swift in Sources */,
 				6E6E0E8D2E14518C00C459DD /* PerformanceOptimizedCoreDataStack.swift in Sources */,
 				6E57FA272E0F2A2500B6364B /* AnimatedCheckbox.swift in Sources */,
@@ -460,7 +460,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ModernToDoApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TidyTasks/Preview Content\"";
 				DEVELOPMENT_TEAM = DKGF9239FT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -474,7 +474,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moderntodoapp.ModernToDoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tidytasks.TidyTasks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -490,7 +490,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ModernToDoApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TidyTasks/Preview Content\"";
 				DEVELOPMENT_TEAM = DKGF9239FT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -504,7 +504,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moderntodoapp.ModernToDoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tidytasks.TidyTasks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -515,7 +515,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A0000F80000000000000001 /* Build configuration list for PBXProject "ModernToDoApp" */ = {
+		1A0000F80000000000000001 /* Build configuration list for PBXProject "TidyTasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A0001090000000000000001 /* Debug */,
@@ -524,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A00010B0000000000000001 /* Build configuration list for PBXNativeTarget "ModernToDoApp" */ = {
+		1A00010B0000000000000001 /* Build configuration list for PBXNativeTarget "TidyTasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A00010C0000000000000001 /* Debug */,

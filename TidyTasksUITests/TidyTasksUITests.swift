@@ -1,6 +1,6 @@
 import XCTest
 
-final class ModernToDoAppUITests: XCTestCase {
+final class TidyTasksUITests: XCTestCase {
     
     var app: XCUIApplication!
     

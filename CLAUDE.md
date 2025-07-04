@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 🎉 BUILD FIXED - APP WORKS! ✨ NOTIFICATION SYSTEM OVERHAULED!
 
-The ModernToDoApp now builds successfully and runs as a high-performance iOS To-Do application with a completely refactored notification system, real-time badge updates, comprehensive localization, enhanced notifications, modern app icons, and advanced category management.
+TidyTasks now builds successfully and runs as a high-performance iOS To-Do application with a completely refactored notification system, real-time badge updates, comprehensive localization, enhanced notifications, modern app icons, and advanced category management.
 
 ### 🔔 LATEST UPDATE: NOTIFICATION SYSTEM REFACTOR (v2.2)
 - **Complete NotificationManager rewrite** for maximum reliability
@@ -17,13 +17,13 @@ The ModernToDoApp now builds successfully and runs as a high-performance iOS To-
 
 ## Project Overview
 
-**ModernToDoApp** is a working iOS To-Do application built with SwiftUI and Core Data. The app provides comprehensive task management functionality with CloudKit synchronization, notifications, and multiple platform extensions.
+**TidyTasks** is a working iOS To-Do application built with SwiftUI and Core Data. The app provides comprehensive task management functionality with CloudKit synchronization, notifications, and multiple platform extensions.
 
 ### Quick Start
-1. Open `ModernToDoApp.xcodeproj` in Xcode
-2. Select "ModernToDoApp" scheme and iOS Simulator
-3. Build and run (`Cmd+R`) or use command: `xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' build`
-4. For testing changes, always run tests before committing: `xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp test`
+1. Open `TidyTasks.xcodeproj` in Xcode
+2. Select "TidyTasks" scheme and iOS Simulator
+3. Build and run (`Cmd+R`) or use command: `xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' build`
+4. For testing changes, always run tests before committing: `xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks test`
 
 ## Technology Stack
 
@@ -38,8 +38,8 @@ The ModernToDoApp now builds successfully and runs as a high-performance iOS To-
 ## Project Structure
 
 ```
-ModernToDoApp/
-├── ModernToDoApp/                 # Main iOS app
+TidyTasks/
+├── TidyTasks/                     # Main iOS app
 │   ├── Core/                      # Core Data stack, models, services
 │   │   ├── TaskModel.xcdatamodeld # Core Data model
 │   │   ├── PersistenceController.swift # CloudKit-enabled Core Data stack
@@ -50,11 +50,11 @@ ModernToDoApp/
 │   ├── Views/                     # Task and category detail views
 │   ├── Enums/                     # TaskPriority and other enums
 │   └── Extensions/                # Color and other extensions
-├── ModernToDoApp Watch App/       # watchOS companion app
+├── TidyTasks Watch App/           # watchOS companion app
 ├── ToDoWidget/                    # iOS widget extension
 ├── Share Extension/               # Share extension for external task creation
-├── ModernToDoAppTests/           # Unit tests with repository pattern tests
-├── ModernToDoAppUITests/         # UI automation tests
+├── TidyTasksTests/               # Unit tests with repository pattern tests
+├── TidyTasksUITests/             # UI automation tests
 └── Unused/                       # Archived MVVM implementation with repositories, view models, and dependency injection
 ```
 
@@ -113,57 +113,57 @@ The app uses a **simplified direct Core Data integration** pattern rather than f
 ### Building and Running
 ```bash
 # Build the main app
-xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp build
+xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks build
 
 # Build for simulator
-xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' build
+xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' build
 
 # Run all tests
-xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp test
+xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks test
 
 # Run specific test class
-xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp test -only-testing:ModernToDoAppTests/ModernToDoAppTests
+xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks test -only-testing:TidyTasksTests/TidyTasksTests
 
 # Run unit tests only (no UI tests)
-xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp test -only-testing:ModernToDoAppTests
+xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks test -only-testing:TidyTasksTests
 
 # Run UI tests only
-xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp test -only-testing:ModernToDoAppUITests
+xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks test -only-testing:TidyTasksUITests
 ```
 
 ## Key Files and Architecture
 
 ### Core Data Stack
-- `ModernToDoApp/Core/PersistenceController.swift` - CloudKit-enabled Core Data stack
-- `ModernToDoApp/Core/CoreDataStack.swift` - Simplified Core Data stack (used by main app)
-- `ModernToDoApp/Core/TaskModel.xcdatamodeld/` - Core Data model with Task and TaskCategory entities
+- `TidyTasks/Core/PersistenceController.swift` - CloudKit-enabled Core Data stack
+- `TidyTasks/Core/CoreDataStack.swift` - Simplified Core Data stack (used by main app)
+- `TidyTasks/Core/TaskModel.xcdatamodeld/` - Core Data model with Task and TaskCategory entities
 
-### Entity Extensions (ModernToDoApp/Core/Models/)
+### Entity Extensions (TidyTasks/Core/Models/)
 - `Task+Extensions.swift` - Task entity computed properties (isOverdue, isDueToday, etc.)
 - `TaskCategory+Extensions.swift` - TaskCategory entity extensions
 
-### Main Views (ModernToDoApp/Features/)
+### Main Views (TidyTasks/Features/)
 - `ContentView.swift` - Main tab view with TaskListView, CategoriesView, SettingsView, ProductivityChartView
 - `TaskListView` - Main task list with sections (Overdue, Today, Tomorrow, Upcoming, etc.)
 - `CategoriesView` - Category management interface
 - `SettingsView` - App settings and preferences
 
-### Detail Views (ModernToDoApp/Views/)
+### Detail Views (TidyTasks/Views/)
 - `TaskDetailView.swift` - Task creation and editing form
 - `CategoryDetailView.swift` - Category creation and editing
 
-### Services (ModernToDoApp/Core/Services/)
+### Services (TidyTasks/Core/Services/)
 - `NotificationManager.swift` - Local notification scheduling and management
 
-### Enums (ModernToDoApp/Enums/)
+### Enums (TidyTasks/Enums/)
 - `TaskPriority.swift` - Task priority enum with colors and system images
 
-### Extensions (ModernToDoApp/Extensions/)
+### Extensions (TidyTasks/Extensions/)
 - `Color+Extensions.swift` - Color hex string support and keyboard dismissal functionality
 
 ## Testing
 
-The test suite includes comprehensive unit tests in `ModernToDoAppTests/`:
+The test suite includes comprehensive unit tests in `TidyTasksTests/`:
 - Repository pattern tests (even though the main app doesn't use repositories)
 - Core Data operations testing with in-memory stores
 - Task entity relationship testing
@@ -487,7 +487,7 @@ The test suite includes comprehensive unit tests in `ModernToDoAppTests/`:
 - **Non-Disruptive**: Beautiful effects that enhance UX without being distracting
 
 ### Files Modified for Checkbox Enhancement
-- `ModernToDoApp/Features/ContentView.swift`:
+- `TidyTasks/Features/ContentView.swift`:
   - Enhanced `TaskCardView` with gesture isolation
   - New `ModernCheckboxView` component with advanced animations
   - New `CompactPriorityIndicatorView` for left-side priority display

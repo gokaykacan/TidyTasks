@@ -1,8 +1,8 @@
 import XCTest
 import CoreData
-@testable import ModernToDoApp
+@testable import TidyTasks
 
-final class ModernToDoAppTests: XCTestCase {
+final class TidyTasksTests: XCTestCase {
     
     var persistenceController: PersistenceController!
     var taskRepository: TaskRepository!

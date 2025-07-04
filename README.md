@@ -1,4 +1,4 @@
-# ModernToDoApp
+# TidyTasks
 
 A comprehensive iOS To-Do application built with SwiftUI and Core Data, featuring full Turkish-English localization, enhanced notifications, and modern app icons.
 
@@ -56,8 +56,8 @@ A comprehensive iOS To-Do application built with SwiftUI and Core Data, featurin
 
 ### Project Structure
 ```
-ModernToDoApp/
-├── ModernToDoApp/
+TidyTasks/
+├── TidyTasks/
 │   ├── Assets.xcassets/           # App icons and visual assets
 │   ├── Core/
 │   │   ├── TaskModel.xcdatamodeld # Core Data model
@@ -75,12 +75,12 @@ ModernToDoApp/
 │   ├── Extensions/                # Color, String localization
 │   ├── en.lproj/                  # English localization
 │   ├── tr.lproj/                  # Turkish localization
-│   └── ModernToDoAppApp.swift     # App entry point with AppDelegate
-├── ModernToDoApp Watch App/       # watchOS companion (structure)
+│   └── TidyTasksApp.swift         # App entry point with AppDelegate
+├── TidyTasks Watch App/           # watchOS companion (structure)
 ├── ToDoWidget/                    # iOS widget extension (structure)
 ├── Share Extension/               # Share extension (structure)
-├── ModernToDoAppTests/           # Unit tests
-└── ModernToDoAppUITests/         # UI automation tests
+├── TidyTasksTests/               # Unit tests
+└── TidyTasksUITests/             # UI automation tests
 ```
 
 ## 🚀 Getting Started
@@ -93,18 +93,18 @@ ModernToDoApp/
 ### Building the App
 ```bash
 # Clone and navigate to project
-cd /path/to/ModernToDoApp
+cd /path/to/TidyTasks
 
 # Build for simulator
-xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' build
+xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 16' build
 
 # Run tests
-xcodebuild -project ModernToDoApp.xcodeproj -scheme ModernToDoApp test
+xcodebuild -project TidyTasks.xcodeproj -scheme TidyTasks test
 ```
 
 ### Running in Xcode
-1. Open `ModernToDoApp.xcodeproj` in Xcode
-2. Select "ModernToDoApp" scheme and iOS Simulator
+1. Open `TidyTasks.xcodeproj` in Xcode
+2. Select "TidyTasks" scheme and iOS Simulator
 3. Build and run (`Cmd+R`)
 
 ## 🔧 Configuration
@@ -252,6 +252,83 @@ For detailed technical documentation, see:
 - Code comments throughout the project
 - Inline documentation for all public APIs
 
+## 🎯 App Features Overview
+
+### Core Task Management
+- **Task Creation**: Create tasks with title, description, priority levels, and due dates
+- **Smart Organization**: Automatic categorization (Overdue, Today, Tomorrow, Upcoming)
+- **Priority System**: High (🔴), Medium (🟡), Low (🟢) priority levels with visual indicators
+- **Completion Tracking**: Swipe-to-complete with visual feedback and progress tracking
+- **Search & Filter**: Real-time search and category-based filtering
+
+### Category Management
+- **Custom Categories**: Create color-coded categories with custom icons
+- **Advanced Actions**: Edit, delete completed tasks, or delete entire categories
+- **Task Organization**: Filter and organize tasks by categories
+- **Visual Indicators**: Category-specific colors and task counts
+
+### Notification System
+- **Smart Notifications**: Due date reminders with priority-based styling
+- **Interactive Actions**: Complete, postpone, or view tasks directly from notifications
+- **Badge Management**: Real-time app icon badge updates
+- **Rich Content**: Notifications include task details, notes, and category information
+
+### Internationalization
+- **Dual Language Support**: Full Turkish and English localization
+- **Dynamic Switching**: Change language on-the-fly with immediate UI updates
+- **Contextual Translation**: All UI elements, notifications, and system messages
+- **Professional Quality**: Native-level translations for both languages
+
+## 🛠️ Technical Specifications
+
+### Development Environment
+- **Xcode Version**: 15.0 or later
+- **iOS Deployment Target**: iOS 15.0+
+- **Swift Version**: Swift 5.9+
+- **Architecture**: SwiftUI with Core Data
+
+### Key Technologies
+- **UI Framework**: SwiftUI with custom components
+- **Data Persistence**: Core Data with CloudKit synchronization
+- **Notifications**: UNUserNotificationCenter with rich interactions
+- **Localization**: NSLocalizedString with .lproj resource bundles
+- **Testing**: XCTest framework for unit and UI tests
+
+### Performance Features
+- **Real-time Updates**: Automatic UI refresh with @FetchRequest
+- **Memory Management**: Efficient Core Data operations with proper cleanup
+- **Battery Optimization**: Smart timer management and background processing
+- **Gesture Handling**: Optimized touch interactions and haptic feedback
+
+## 🎨 User Interface
+
+### Modern Design Elements
+- **Tab Navigation**: Clean tab-based interface (Tasks, Categories, Settings, Insights)
+- **Floating Action Button**: Quick task and category creation
+- **Swipe Gestures**: Intuitive swipe actions for common operations
+- **Dark Mode Support**: Automatic system theme detection with manual override
+- **Accessibility**: VoiceOver support and proper contrast ratios
+
+### Visual Feedback
+- **Smooth Animations**: 60fps transitions and micro-interactions
+- **Haptic Feedback**: Tactile responses for user actions
+- **Progress Indicators**: Visual completion states and loading animations
+- **Color Coding**: Consistent color scheme throughout the app
+
+## 🔐 Data & Privacy
+
+### Data Storage
+- **Local First**: All data stored locally with Core Data
+- **CloudKit Sync**: Optional iCloud synchronization across devices
+- **Offline Support**: Full functionality without internet connection
+- **Data Export**: Built-in data management and clearing options
+
+### Privacy Protection
+- **No Third-party Analytics**: No external tracking or data collection
+- **Local Processing**: All operations performed on-device
+- **Secure Notifications**: Notifications handled through Apple's secure framework
+- **User Control**: Full control over data synchronization and storage
+
 ## 🤝 Contributing
 
 This project uses:
@@ -260,6 +337,20 @@ This project uses:
 - UNUserNotificationCenter for local notifications
 - Comprehensive localization with .lproj bundles
 - XCTest for testing
+
+### Development Guidelines
+- Follow SwiftUI best practices and conventions
+- Maintain comprehensive test coverage
+- Ensure all UI strings are localized
+- Test on multiple device sizes and orientations
+- Verify notification functionality on physical devices
+
+### Code Structure
+- Use direct Core Data integration with @FetchRequest
+- Implement proper error handling and recovery
+- Follow Apple's Human Interface Guidelines
+- Maintain clean separation of concerns
+- Document all public APIs and complex logic
 
 ## 📝 License
 
